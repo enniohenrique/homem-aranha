@@ -1,6 +1,9 @@
 @import url(./reset.css);
 @import url(./global.css);
 @import url(./componentes/navigator.css);
+@import url(./componentes/pills.css);
+@import url(./componentes/link-btn.css);
+@import url(./componentes/galeria.css);
 
 .wrapper {
     display: flex;
@@ -11,15 +14,65 @@
 .wrapper .coluna-esquerda {
     width: 100px;
     height: 100%;
-    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    padding-right: 50px;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .wrapper .conteudo-principal {
     height: 100%;
     width: 100%;
     background-color: gray;
-    padding-left: 30px;
+    padding-left: 130px;
+}
+
+.wrapper .conteudo-principal__top {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.wrapper .conteudo-principal__bottom {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:  flex-end;
+}
+
+.wrapper .conteudo-principal .logo img {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+.wrapper .conteudo-principal__top .descricao {
+    background-color: rgba(0,0 , 0, .7);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.wrapper .conteudo-principal__top .descricao .descricao__text p {
+    color: #fff;
+    line-height: 170%;
+}
+
+.wrapper .conteudo-principal__top .descricao .pills{
+    margin-bottom: 20px;
+}
+
+.wrapper .conteudo-principal .links {
+    padding: 20px;
+    padding-left: 0;
+}
+
+.wrapper .conteudo-principal .links ul {
+    display: flex;
 }
