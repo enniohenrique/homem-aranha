@@ -1,0 +1,25 @@
+@import url(./reset.css);
+@import url(./global.css);
+@import url(./componentes/navigator.css);
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+}
+
+.wrapper .coluna-esquerda {
+    width: 100px;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .conteudo-principal {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    padding-left: 30px;
+}
