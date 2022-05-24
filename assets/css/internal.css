@@ -11,6 +11,11 @@
     flex-flow: row nowrap;
 }
 
+.wrapper video {
+    position: fixed;
+    width: 100%;
+}
+
 .wrapper .coluna-esquerda {
     width: 100px;
     height: 100%;
@@ -27,8 +32,8 @@
 .wrapper .conteudo-principal {
     height: 100%;
     width: 100%;
-    background-color: gray;
     padding-left: 130px;
+    position: relative;
 }
 
 .wrapper .conteudo-principal__top {
@@ -75,4 +80,9 @@
 
 .wrapper .conteudo-principal .links ul {
     display: flex;
+}
+
+.spiderman-01-01 {
+    background-image: url('../images/spiderman-tobey/movie-01/background.png');
+    background-size: cover;
 }
